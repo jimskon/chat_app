@@ -1,0 +1,23 @@
+<h1>Message Details</h1>
+
+<p>
+    <strong>Sender:</strong>
+    <%= @message.sender %>
+</p>
+
+<p>
+    <strong>Recipient:</strong>
+    <%= @message.recipient %>
+</p>
+
+<p>
+    <strong>Content:</strong>
+    <%= @message.content %>
+</p>
+
+<p>
+    <strong>Sent at:</strong>
+    <%= @message.created_at.strftime("%B %d, %Y %H:%M") %>
+</p>
+
+<%= link_to 'Back to Messages', messages_path %>
